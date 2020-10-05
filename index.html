@@ -1,16 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 
+  <header class="siteheader">
+    <div class="container siteheader__wrapper">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="img/myteam.png" width="160" height="40" alt="logo">
+      </a>
+
+      <nav class="sitenav">
+        <ul class="sitenav-list">
+          <li class="sitenav-list__item hamburger-li">
+            <button type="button">
+              <img src="img/close.svg" alt="open">
+            </button>
+          </li>
+          <li class="sitenav-list__item">
+            <a href="index.html" class="sitenav-list__link">home</a>
+          </li>
+          <li class="sitenav-list__item">
+            <a href="about.html" class="sitenav-list__link">about</a>
+          </li>
+        </ul>
+        <button class="sitenav__btn btn--primary" type="button">contact us</button>
+      </nav>
+      <button class="hamburger" type="button">
+        <img src="img/hamburger.svg" alt="open">
+      </button>
+
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__wrapper">
+      <div class="container hero__container">
+        <h1 class="hero__heading">Find the best <span>talent</span></h1>
+        <p class="hero__text">Finding the right people and building high performing teams can be hard. Most companies
+          aren’t tapping into the
+          abundance of global talent. We’re about to change that.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- <button disabled class="btn--primary" type="button">contact us</button> -->
+  <!-- <a disabled class="btn--primary btn--secondary" href="#">contact us</a> -->
+
+
+  <script>
+    var elSiteHeader = document.querySelector('.sitenav');
+    var elSiteHeaderToggler = document.querySelector('.hamburger');
+    var elSiteHeaderRemover = document.querySelector('.hamburger-li');
+
+    elSiteHeaderToggler.addEventListener('click', function () {
+      elSiteHeader.classList.toggle('sitenav-open');
+
+      // elSiteHeaderToggler.classList.toggle('hamburger-open');
+    });
+
+    elSiteHeaderRemover.addEventListener('click', function () {
+      elSiteHeader.classList.toggle('sitenav-open');
+
+      // elSiteHeaderToggler.classList.toggle('hamburger-open');
+    });
 
 
 
-  <script src="js/main.js"></script>
+  </script>
 </body>
+
 </html>

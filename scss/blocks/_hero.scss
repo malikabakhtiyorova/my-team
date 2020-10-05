@@ -1,0 +1,111 @@
+.hero__wrapper {
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("../img/dark-circle.png"), url("../img/couple-circles.png");
+  background-repeat: no-repeat;
+  background-position: -1% 35%, right 18% top 100%;
+}
+
+.hero__container {
+  padding: 70px 0 200px 0;
+  display: flex;
+  align-items: center;
+}
+
+.hero__heading {
+  max-width: 620px;
+  font-size: 100px;
+  line-height: 100px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.hero__heading span {
+  color: #F67E7E;
+}
+
+.hero__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  max-width: 445px;
+}
+
+.hero__text::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 75px;
+}
+
+@media only screen and (max-width:1336px) {
+  .hero__wrapper {
+    background: none;
+    padding: 0 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width:1078px) {
+  .hero__heading {
+    font-size: 80px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width:1034px) {
+  .hero__heading {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width:845px) {
+  .hero-heading {
+    line-height: 60px;
+  }
+}
+
+@media only screen and (max-width:777px) {
+  .siteheader {
+    margin: 50px 0;
+  }
+  .hero {
+    background-image: url("../img/couple-circles.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+  .hero__container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero__heading {
+    line-height: 50px;
+    max-width: 300px;
+    margin-bottom: 0;
+  }
+  
+  .hero__text {
+    max-width: 510px;
+    font-size: 15px;
+    line-height: 28px;
+  }
+  
+  .hero__text::before {
+    display: none;
+  }
+  
+}
+
+@media only screen and (max-width:555px) {
+  .logo {
+    margin-right: 40px;
+    // min-width: 100px;
+  }
+}
