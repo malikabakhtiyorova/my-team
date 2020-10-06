@@ -1,19 +1,25 @@
-.hero__wrapper {
+.section__wrapper {
   max-width: 1500px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url("../img/dark-circle.png"), url("../img/couple-circles.png");
   background-repeat: no-repeat;
-  background-position: -1% 35%, right 18% top 100%;
 }
 
-.hero__container {
-  padding: 70px 0 200px 0;
+.hero-wrapper {
+  background-image: url("../img/dark-circle.png"), url("../img/couple-circles.png");
+  background-position: -1.5% 35%, right 18% top 100%;
+}
+
+.section__container {
   display: flex;
+}
+
+.hero-container {
+  padding: 70px 0 200px 0;
   align-items: center;
 }
 
-.hero__heading {
+.section__heading {
   max-width: 620px;
   font-size: 100px;
   line-height: 100px;
@@ -21,11 +27,11 @@
   color: #FFFFFF;
 }
 
-.hero__heading span {
+.section__heading span {
   color: #F67E7E;
 }
 
-.hero__text {
+.section__text {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
@@ -33,7 +39,7 @@
   max-width: 445px;
 }
 
-.hero__text::before {
+.hero-text::before {
   content: "";
   display: block;
   width: 50px;
@@ -44,7 +50,7 @@
 }
 
 @media only screen and (max-width:1336px) {
-  .hero__wrapper {
+  .section__wrapper {
     background: none;
     padding: 0 40px;
     margin-left: auto;
@@ -53,20 +59,20 @@
 }
 
 @media only screen and (max-width:1078px) {
-  .hero__heading {
+  .section__heading {
     font-size: 80px;
     margin-right: 20px;
   }
 }
 
 @media only screen and (max-width:1034px) {
-  .hero__heading {
+  .section__heading {
     font-size: 60px;
   }
 }
 
 @media only screen and (max-width:845px) {
-  .hero-heading {
+  .section-heading {
     line-height: 60px;
   }
 }
@@ -75,29 +81,29 @@
   .siteheader {
     margin: 50px 0;
   }
-  .hero {
+  .section {
     background-image: url("../img/couple-circles.png");
     background-repeat: no-repeat;
     background-position: bottom center;
   }
-  .hero__container {
+  .section__container {
     flex-direction: column;
     text-align: center;
   }
   
-  .hero__heading {
+  .section__heading {
     line-height: 50px;
     max-width: 300px;
     margin-bottom: 0;
   }
   
-  .hero__text {
+  .section__text {
     max-width: 510px;
     font-size: 15px;
     line-height: 28px;
   }
   
-  .hero__text::before {
+  .section__text::before {
     display: none;
   }
   

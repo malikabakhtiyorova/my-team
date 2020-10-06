@@ -61,7 +61,7 @@
   color: #FFFFFF;
 }
 
-.hamburger-li button{
+.hamburger-li{
   background: none;
   border:none;
  display: none;
@@ -75,7 +75,10 @@
   }
   .sitenav-open .sitenav-list {
     padding: 50px 0 50px 50px;
-    // align-items: flex-end;
+    background-image: url("../img/couple-circles.png");
+    background-repeat: no-repeat;
+    background-position: rightr;
+    background-attachment: fixed;
     height: 100%;
     max-width: 70%;
     background-color: #2C6269;
@@ -84,7 +87,15 @@
 
   .hamburger-li {
     display: block;
+    max-width: 40px;
+    margin-left: auto;
    }
+
+   .hamburger-li button {
+    border: none;
+    background: none;
+    margin-right: -10px;
+  }
 
   .sitenav-open .sitenav-list__item {
     margin-bottom: 20px;
