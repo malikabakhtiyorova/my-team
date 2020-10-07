@@ -48,4 +48,15 @@
   .action__container {
     flex-direction: column;
   }
+
+  .action h2 {
+    font-size: 28px;
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (max-width:400px) { 
+  .action h2 {
+    font-size: 24px;
+  }
 }

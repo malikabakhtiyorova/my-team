@@ -1065,6 +1065,16 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .action h2 {
+    font-size: 28px;
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .action h2 {
+    font-size: 24px;
+  }
 }
 
 .sitefooter {
@@ -1086,6 +1096,12 @@ img {
 
 .footer__middle {
   margin-left: 40px;
+}
+
+.footer-responsive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer__middle p, .footer__middle a {
@@ -1122,7 +1138,7 @@ img {
   margin-bottom: 50px;
 }
 
-.sns li {
+.sns li:not(:first-child) {
   margin-left: 16px;
 }
 
@@ -1132,5 +1148,86 @@ img {
   line-height: 25px;
   text-align: right;
   color: #FFFFFF;
+}
+
+@media only screen and (max-width: 770px) {
+  .sitefooter .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-responsive {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 30px;
+  }
+  .sns {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .sitefooter .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-responsive {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__left {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__middle {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .sitenav-list li:last-child {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+  .logo {
+    margin-right: 0;
+  }
+  .footer__right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=main.css.map */
