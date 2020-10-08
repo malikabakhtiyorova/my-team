@@ -462,6 +462,10 @@ img {
   white-space: nowrap;
 }
 
+.sitenav__btn:hover {
+  text-decoration: none;
+}
+
 .btn--primary:hover {
   background-color: #fff;
   color: #014E56;
