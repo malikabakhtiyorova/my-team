@@ -49,6 +49,22 @@
   margin-bottom: 75px;
 }
 
+.about-hero .section__text {
+  margin-left: auto;
+  max-width: 700px;
+}
+
+
+.about-hero .section__wrapper {
+  background-image: url("../img/mobile-header.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.about-hero .hero-container {
+  display: flex;
+  flex-grow: 1;
+}
+
 @media only screen and (max-width:1336px) {
   .section__wrapper {
     background: none;

@@ -680,6 +680,26 @@ img {
   margin-bottom: 75px;
 }
 
+.about-hero .section__text {
+  margin-left: auto;
+  max-width: 700px;
+}
+
+.about-hero .section__wrapper {
+  background-image: url("../img/mobile-header.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.about-hero .hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 @media only screen and (max-width: 1336px) {
   .section__wrapper {
     background: none;
@@ -1079,6 +1099,7 @@ img {
 
 .sitefooter {
   padding: 50px 0;
+  background-color: #002529;
 }
 
 .sitefooter .container {
@@ -1229,5 +1250,85 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.form-section {
+  padding: 0px 0 110px 0;
+}
+
+.form-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-section__right {
+  width: 540px;
+}
+
+.contacts-form input:not(:last-child), textarea {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  padding: 20px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  margin: 15px 0;
+  outline: none;
+}
+
+.contacts-form input:not(:last-child):invalid:not(:placeholder-shown) {
+  border-bottom-color: red;
+  color: red;
+}
+
+.input-validation-error {
+  color: black;
+}
+
+.contacts-form input:not(:last-child):valid, textarea:valid {
+  border-bottom-color: turquoise;
+}
+
+.contacts-form input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.7;
+  font-weight: 600;
+}
+
+.contacts-form input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.7;
+  font-weight: 600;
+}
+
+.contacts-form input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.7;
+  font-weight: 600;
+}
+
+.contacts-form input::placeholder, textarea::placeholder {
+  color: #fff;
+  opacity: 0.7;
+  font-weight: 600;
+}
+
+.contacts-form input placeholder:hover {
+  border-bottom-color: 1px solid #79C8C7;
+}
+
+.contacts-form .btn--primary {
+  background-color: blanchedalmond;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,59 @@
+.form-section {
+  padding: 0px 0 110px 0;
+}
+
+.form-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-section__right {
+  width: 540px;
+}
+
+.contacts-form input:not(:last-child), textarea{
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  padding: 20px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  margin: 15px 0;
+  outline: none;
+}
+
+.contacts-form input:not(:last-child):invalid/* :not(:focus) */:not(:placeholder-shown) {
+  // Show a light reminder
+  border-bottom-color: red;
+  color: red;
+}
+.input-validation-error
+{
+   color:black;
+}
+
+.contacts-form input:not(:last-child):valid, textarea:valid {
+  border-bottom-color: turquoise;
+}
+
+.contacts-form input::placeholder, textarea::placeholder {
+  color: #fff;
+  opacity: 0.7;
+  font-weight: 600;
+}
+
+.contacts-form input placeholder:hover {
+  border-bottom-color: 1px solid #79C8C7;
+}
+
+
+.contacts-form .btn--primary {
+  background-color: blanchedalmond;
+  margin-top: 20px;
+}
+
+
