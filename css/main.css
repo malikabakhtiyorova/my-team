@@ -684,26 +684,6 @@ img {
   margin-bottom: 75px;
 }
 
-.about-hero .section__text {
-  margin-left: auto;
-  max-width: 700px;
-}
-
-.about-hero .section__wrapper {
-  background-image: url("../img/mobile-header.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-}
-
-.about-hero .hero-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
 @media only screen and (max-width: 1336px) {
   .section__wrapper {
     background: none;
@@ -1256,6 +1236,30 @@ img {
   }
 }
 
+.about-hero p::before {
+  background-color: #F67E7E;
+}
+
+.about-hero .section__text {
+  margin-left: auto;
+  max-width: 700px;
+}
+
+.about-hero .section__wrapper {
+  background-image: url("../img/mobile-header.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.about-hero .hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .form-section {
   padding: 0px 0 110px 0;
 }
@@ -1282,7 +1286,7 @@ img {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #fff;
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
   cursor: pointer;
   color: #fff;
   font-weight: 600;
@@ -1297,6 +1301,134 @@ img {
 
 .input-validation-error {
   color: black;
+}
+
+.form-section__left h1 {
+  font-size: 64px;
+  line-height: 100px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+.form-section__left h2 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 600;
+  color: #F67E7E;
+  margin-bottom: 0;
+}
+
+.form-section__left ul, ol {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.form-section__left ul li {
+  margin-top: 30px;
+}
+
+.form-section__left img::before {
+  display: inline-block;
+  content: "";
+  border-radius: red;
+}
+
+.feauture-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feauture-list__item::before {
+  content: "";
+  width: 72px;
+  height: 72px;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.feauture-list__item:nth-child(1)::before {
+  background-image: url("../img/experience.png");
+}
+
+.feauture-list__item:nth-child(2)::before {
+  background-image: url("../img/tool.png");
+}
+
+.feauture-list__item:nth-child(3)::before {
+  background-image: url("../img/productivity.png");
+}
+
+input:focus:invalid:placeholder-shown {
+  border-bottom-color: red;
+}
+
+textarea:focus:invalid:placeholder-shown {
+  border-bottom-color: red;
+}
+
+textarea:focus:invalid:placeholder-shown::-webkit-input-placeholder {
+  color: red;
+}
+
+textarea:focus:invalid:placeholder-shown:-ms-input-placeholder {
+  color: red;
+}
+
+textarea:focus:invalid:placeholder-shown::-ms-input-placeholder {
+  color: red;
+}
+
+textarea:focus:invalid:placeholder-shown::placeholder {
+  color: red;
+}
+
+input:focus:invalid:placeholder-shown::-webkit-input-placeholder {
+  color: red;
+}
+
+input:focus:invalid:placeholder-shown:-ms-input-placeholder {
+  color: red;
+}
+
+input:focus:invalid:placeholder-shown::-ms-input-placeholder {
+  color: red;
+}
+
+input:focus:invalid:placeholder-shown::placeholder {
+  color: red;
+}
+
+label {
+  display: block;
+  font-style: italic;
+  font-weight: 500;
+  color: transparent;
+}
+
+input:active + label {
+  color: red;
+}
+
+span {
+  opacity: 0;
+}
+
+input:focus:invalid:placeholder-shown + span {
+  opacity: 1;
+  font-style: italic;
+  font-weight: 600;
+  color: red;
+}
+
+.form-section__left p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #FFFFFF;
 }
 
 .contacts-form input:not(:last-child):valid, textarea:valid {
@@ -1327,12 +1459,24 @@ img {
   font-weight: 600;
 }
 
-.contacts-form input placeholder:hover {
+.contacts-form input::-webkit-input-placeholder:hover {
+  border-bottom-color: 1px solid #79C8C7;
+}
+
+.contacts-form input:-ms-input-placeholder:hover {
+  border-bottom-color: 1px solid #79C8C7;
+}
+
+.contacts-form input::-ms-input-placeholder:hover {
+  border-bottom-color: 1px solid #79C8C7;
+}
+
+.contacts-form input::placeholder:hover {
   border-bottom-color: 1px solid #79C8C7;
 }
 
 .contacts-form .btn--primary {
-  background-color: blanchedalmond;
+  background-color: #fff;
   margin-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */

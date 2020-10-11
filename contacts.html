@@ -60,13 +60,17 @@
       </div>
       <div class="form-section__right">
         <form method="POST" class="contacts-form" action="https://echo.htmlacademy.ru">
-          <input oninvalid="setCustomValidity('This field is required')" type="text" pattern=".{3,}"
-            title=" More than three letter name" placeholder="John Appleseed" name="name" id="name" required>
-          <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" type="email" placeholder="Email Address"
-            name="email" id="email" required>
+          <input oninvalid="setCustomValidity('')" type="text" pattern=".{3,}" title=" More than three letter name"
+            placeholder="John Appleseed" name="name" id="name" required="required">
+          <span>this field is required</span>
+          <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" type="text" placeholder="Email Address" name="email"
+            id="email" required>
+          <span>this field is required</span>
           <input type="text" placeholder="Company Name" name="compName" id="compName" required>
+          <span>this field is required</span>
           <input pattern=".{3,}" type="text" placeholder="Title" name="title" id="title" required>
-          <textarea placeholder="Message" name="message" id="message"></textarea>
+          <span>this field is required</span>
+          <textarea cols="30" rows="5" placeholder="Message" name="message" id="message"></textarea>
           <input class="btn--primary btn--secondary" value="submit" type="submit">
         </form>
       </div>
@@ -137,7 +141,12 @@
       // elSiteHeaderToggler.classList.toggle('hamburger-open');
     });
 
-
+    document.addEventListener('invalid', (function () {
+      return function (e) {
+        e.preventDefault();
+        document.getElementById("name").focus();
+      };
+    })(), true);
 
   </script>
 </body>
