@@ -16,32 +16,3 @@
   transition: all 0.3s ease;
   white-space: nowrap;
 }
-
-.sitenav__btn:hover {
-  text-decoration: none;
-}
-
-.btn--primary:hover {
-  background-color: #fff;
-  color: #014E56;
-  border-color: #014E56;
-}
-
-.btn--primary[disabled] {
-  color: rgba(255, 255, 255, 0.4);
-  border-color: rgba(255, 255, 255, 0.4);
-}
-
-.btn--secondary {
-  color: #014E56;
-  background-color: #fff;
-}
-
-.btn--secondary:hover {
-  background-color: #014E56;
-}
-
-.btn--secondary[disabled] {
-  color: #014E56;
-  background-color: rgba(255, 255, 255, 0.4);
-}
